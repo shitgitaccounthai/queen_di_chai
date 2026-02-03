@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCU Fan Hub | The Timeline</title>
+    <style>
+        :root {
+            --marvel-red: #e23636;
+            --dark-bg: #0f0f0f;
+            --card-bg: #1e1e1e;
+            --imdb-gold: #f5c518;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--dark-bg);
+            color: white;
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--marvel-red);
+        }
+
+        h1 { font-size: 3rem; text-transform: uppercase; letter-spacing: 8px; margin: 0; color: #fff; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+
+        .timeline-item {
+            display: flex;
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border-left: 5px solid var(--marvel-red);
+            transition: transform 0.2s;
+        }
+
+        .timeline-item:hover { transform: translateX(10px); }
+
+        .year-side {
+            background: rgba(226, 54, 54, 0.1);
+            padding: 20px;
+            min-width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--marvel-red);
+            text-align: center;
+        }
+
+        .content { padding: 20px; flex-grow: 1; }
+
+        .title { font-size: 1.3rem; font-weight: bold; display: block; margin-bottom: 5px; }
+
+        .meta { font-size: 0.85rem; color: #aaa; }
+
+        .type-tag {
+            font-size: 0.7rem;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background: #444;
+            text-transform: uppercase;
+            margin-left: 10px;
+        }
+
+        .rating { color: var(--imdb-gold); float: right; font-weight: bold; }
+
+        .phase-divider {
+            margin: 40px 0 20px;
+            padding: 10px;
+            background: #333;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MCU TIMELINE</h1>
+    <p>Every story from Captain America to the Multiverse</p>
+</header>
+
+<div class="container">
+    <div class="phase-divider">CHRONOLOGICAL ORDER</div>
+
+    <div class="timeline-item">
+        <div class="year-side">1942-1945</div>
+        <div class="content">
+            <span class="rating">⭐ 6.9</span>
+            <span class="title">Captain America: The First Avenger <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: July 2011 | Phase 1</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">1995</div>
+        <div class="content">
+            <span class="rating">⭐ 6.8</span>
+            <span class="title">Captain Marvel <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: March 2019 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2010</div>
+        <div class="content">
+            <span class="rating">⭐ 7.9</span>
+            <span class="title">Iron Man <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2008 | Phase 1</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2011</div>
+        <div class="content">
+            <span class="rating">⭐ 6.9</span>
+            <span class="title">Iron Man 2 <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2010 | Phase 1</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2011</div>
+        <div class="content">
+            <span class="rating">⭐ 6.6</span>
+            <span class="title">The Incredible Hulk <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: June 2008 | Phase 1</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2011</div>
+        <div class="content">
+            <span class="rating">⭐ 7.0</span>
+            <span class="title">Thor <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2011 | Phase 1</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2012</div>
+        <div class="content">
+            <span class="rating">⭐ 8.0</span>
+            <span class="title">The Avengers <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2012 | Phase 1</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2012</div>
+        <div class="content">
+            <span class="rating">⭐ 7.1</span>
+            <span class="title">Iron Man 3 <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2013 | Phase 2</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2013</div>
+        <div class="content">
+            <span class="rating">⭐ 6.8</span>
+            <span class="title">Thor: The Dark World <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: Nov 2013 | Phase 2</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2014</div>
+        <div class="content">
+            <span class="rating">⭐ 7.8</span>
+            <span class="title">Captain America: The Winter Soldier <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: April 2014 | Phase 2</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2014</div>
+        <div class="content">
+            <span class="rating">⭐ 8.0</span>
+            <span class="title">Guardians of the Galaxy <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: Aug 2014 | Phase 2</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2014</div>
+        <div class="content">
+            <span class="rating">⭐ 7.6</span>
+            <span class="title">Guardians of the Galaxy Vol. 2 <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2017 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2015</div>
+        <div class="content">
+            <span class="rating">⭐ 7.3</span>
+            <span class="title">Avengers: Age of Ultron <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2015 | Phase 2</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2015</div>
+        <div class="content">
+            <span class="rating">⭐ 7.2</span>
+            <span class="title">Ant-Man <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: July 2015 | Phase 2</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2016</div>
+        <div class="content">
+            <span class="rating">⭐ 7.8</span>
+            <span class="title">Captain America: Civil War <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2016 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2016</div>
+        <div class="content">
+            <span class="rating">⭐ 6.7</span>
+            <span class="title">Black Widow <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: July 2021 | Phase 4</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2016-2017</div>
+        <div class="content">
+            <span class="rating">⭐ 7.5</span>
+            <span class="title">Doctor Strange <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: Nov 2016 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2017</div>
+        <div class="content">
+            <span class="rating">⭐ 7.3</span>
+            <span class="title">Black Panther <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: Feb 2018 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2017</div>
+        <div class="content">
+            <span class="rating">⭐ 7.4</span>
+            <span class="title">Spider-Man: Homecoming <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: July 2017 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2017</div>
+        <div class="content">
+            <span class="rating">⭐ 7.9</span>
+            <span class="title">Thor: Ragnarok <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: Nov 2017 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2018</div>
+        <div class="content">
+            <span class="rating">⭐ 8.4</span>
+            <span class="title">Avengers: Infinity War <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: April 2018 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2018</div>
+        <div class="content">
+            <span class="rating">⭐ 7.0</span>
+            <span class="title">Ant-Man and the Wasp <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: July 2018 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2018-2023</div>
+        <div class="content">
+            <span class="rating">⭐ 8.4</span>
+            <span class="title">Avengers: Endgame <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: April 2019 | Phase 3</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2023</div>
+        <div class="content">
+            <span class="rating">⭐ 8.2</span>
+            <span class="title">Loki (Season 1) <span class="type-tag">Series</span></span>
+            <span class="meta">Released: June 2021 | Phase 4</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2023</div>
+        <div class="content">
+            <span class="rating">⭐ 7.9</span>
+            <span class="title">WandaVision <span class="type-tag">Series</span></span>
+            <span class="meta">Released: Jan 2021 | Phase 4</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2024</div>
+        <div class="content">
+            <span class="rating">⭐ 7.2</span>
+            <span class="title">Falcon & Winter Soldier <span class="type-tag">Series</span></span>
+            <span class="meta">Released: March 2021 | Phase 4</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2024</div>
+        <div class="content">
+            <span class="rating">⭐ 8.2</span>
+            <span class="title">Spider-Man: No Way Home <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: Dec 2021 | Phase 4</span>
+        </div>
+    </div>
+
+    <div class="timeline-item">
+        <div class="year-side">2025</div>
+        <div class="content">
+            <span class="rating">⭐ 7.9</span>
+            <span class="title">Guardians of the Galaxy Vol. 3 <span class="type-tag">Movie</span></span>
+            <span class="meta">Released: May 2023 | Phase 5</span>
+        </div>
+    </div>
+    
+    </div>
+
+</body>
+</html>
